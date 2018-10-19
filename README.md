@@ -4,6 +4,10 @@ Modification  of SparkFun GraphicLCD_Serial_Backpack
 
 Multiple modifications and bug-fixes from the original SparkFun Firmware
 
+0) Updated code to compile under Atmel Studio 6.2
+
+   PROGMEM changed from old version of Atmel studio, had to add "const" to the static char statement.
+
 1) Serial buffer overflow handing
 
     With a fast enough processor (Particle Photon in my case) it was possible to 
